@@ -128,7 +128,9 @@ public class RobotGame
 
             if( TArea != null )
             {
-                for(int i = 0; i < TArea.logic_mgr.player_list.Count; ++i)
+                Console.WriteLine("TArea.logic_mgr.player_list.Count " + TArea.logic_mgr.player_list.Count+"\n"); 
+
+                for (int i = 0; i < TArea.logic_mgr.player_list.Count; ++i)
                 {
                     Player TPlayer = TArea.logic_mgr.player_list[i];
                     if (TPlayer.get_id() == player_id)
@@ -252,11 +254,13 @@ public class RobotGame
         var rotation = RotMove();
 
         var syncFrame = new SyncFrame(0, TPlayer.get_area_id());
-        var InputSyncMsg = new InputMessage(player_id, moving);
-        syncFrame.dump_actions(InputSyncMsg);
+        //var InputSyncMsg = new InputMessage(player_id, moving); //TODO :改为发送位置！
+
+        // syncFrame.dump_actions(InputSyncMsg);
 
         //         var RotateSyncMsg = new RotateMessage(player_id, rotation);
         //         syncFrame.dump_actions(RotateSyncMsg);
+        TPlayer.move(moving);//本地move,获取新的位置
 
         sysTime++;
         if (sysTime >3 )
@@ -264,7 +268,7 @@ public class RobotGame
             var thePos = TPlayer.get_position();
 
             var Tmsg = new PositionMessage(player_id, new Vector2(thePos.x, thePos.z));
-
+            Console.Write("LocalFrameRecord posioin" + thePos.x, "," + thePos.z);
             syncFrame.dump_actions(Tmsg);
             sysTime = 0;
         }

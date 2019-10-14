@@ -71,10 +71,10 @@ public class Area
 
         List<SyncFrame> syncFrames = new List<SyncFrame>();
 
-        for( int i = StartIndex; i< TotallFrames.Count; ++i )
-        {
-            syncFrames.Add( TotallFrames[i]);
-        }
+        //for (int i = StartIndex; i < TotallFrames.Count; ++i) //每次只发最新的一帧
+        //{
+            syncFrames.Add(TotallFrames[TotallFrames.Count-1]);
+       // }
 
         return syncFrames;
     }

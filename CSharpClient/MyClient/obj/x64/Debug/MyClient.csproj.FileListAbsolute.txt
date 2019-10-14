@@ -20,3 +20,14 @@ F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.cs
 F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.csproj.CopyComplete
 F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.exe
 F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.pdb
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\bin\x64\Debug\MyClient.exe.config
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\bin\x64\Debug\MyClient.exe
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\bin\x64\Debug\MyClient.pdb
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\bin\x64\Debug\protobuf-net.dll
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\bin\x64\Debug\UnityEngine.dll
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\bin\x64\Debug\protobuf-net.xml
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\obj\x64\Debug\MyClient.csprojAssemblyReference.cache
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\obj\x64\Debug\MyClient.csproj.CoreCompileInputs.cache
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\obj\x64\Debug\MyClient.csproj.CopyComplete
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\obj\x64\Debug\MyClient.exe
+F:\2019_10_DistributLockStep_state\CSharpClient\MyClient\obj\x64\Debug\MyClient.pdb

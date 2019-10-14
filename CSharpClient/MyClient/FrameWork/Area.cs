@@ -6,8 +6,8 @@ using System;
 public class Area
 {
     public LogicGameManager logic_mgr;
-    public List<SyncFrame> TotallFrames;
-    public int CurrentFrame;
+    public List<SyncFrame> TotallFrames;//隔几帧存一下
+    public int CurrentFrame;//该区域的最大帧数
 
     int area_id;
     int index_x;
@@ -35,29 +35,42 @@ public class Area
     // called by every frame if this area is active
     public void Tick()
     {
-        for ( ; CurrentFrame < TotallFrames.Count; ++CurrentFrame)
+        //for ( ; CurrentFrame < TotallFrames.Count; ++CurrentFrame)
+        //{
+        //    logic_mgr.excute_frame(TotallFrames[CurrentFrame]);
+        //    logic_mgr.Tick();
+        //}
+        Console.Write("TotallFrames.Count " + TotallFrames.Count+"\n");
+
+        foreach (SyncFrame syncframe in TotallFrames)
         {
-            logic_mgr.excute_frame(TotallFrames[CurrentFrame]);
-            logic_mgr.Tick();
+            logic_mgr.excute_frame(syncframe); // 这里只拿到位置信息
+            logic_mgr.Tick(); //计算新的位置
         }
+        //执行完就清空
+        TotallFrames.Clear();
     }
     public void record_frame(SyncFrame syncFrame)
     {
-        if(area_id == syncFrame.area_id )
+
+        if (area_id == syncFrame.area_id )
         {
             if (TotallFrames.Count == 0)
             {
                 TotallFrames.Add(syncFrame);
+                CurrentFrame = syncFrame.frame_index;
             }
             else
             {
-                if( syncFrame.frame_index == TotallFrames.Count )
+                if( syncFrame.frame_index >= TotallFrames[TotallFrames.Count-1].frame_index )
                 {
                     TotallFrames.Add(syncFrame);
+                    CurrentFrame = syncFrame.frame_index;
+
                 }
                 else
                 {
-                    Console.Write("record_frame " + syncFrame.frame_index + " CurrentMaxFrame " + (TotallFrames.Count -1 ) + "\n");
+                    Console.Write("record_frame " + syncFrame.frame_index + " CurrentMaxFrame " + CurrentFrame + "\n");
                 }
             }
         }
@@ -66,27 +79,30 @@ public class Area
             Console.Write("area_uid != syncFrame.area_id  area_uid " + area_id + " syncFrame.area_id " + syncFrame.area_id + "\n");
         }
 
+        Console.Write("area_id " + area_id + " record_frame " + syncFrame.frame_index + " CurrentMaxFrame " + CurrentFrame + "\n");
+
+
     }
 
-    public SyncFrame get_frame(int frameindex)
-    {
-        if(0 <= frameindex && frameindex < TotallFrames.Count )
-        {
-            return TotallFrames[frameindex];
-        }
+    //public SyncFrame get_frame(int frameindex) //没用到
+    //{
+    //    if(0 <= frameindex && frameindex < TotallFrames.Count )
+    //    {
+    //        return TotallFrames[frameindex];
+    //    }
 
-        return null;
-    }
+    //    return null;
+    //}
 
-    public bool has_frame(int frameindex)
-    {
-        if (0 <= frameindex && frameindex < TotallFrames.Count)
-        {
-            return true;
-        }
+    //public bool has_frame(int frameindex)//没用到
+    //{
+    //    if (0 <= frameindex && frameindex < TotallFrames.Count)
+    //    {
+    //        return true;
+    //    }
 
-        return false;
-    }
+    //    return false;
+    //}
 
     public int get_area_id()
     {
@@ -107,7 +123,8 @@ public class Area
 
     public int get_frame_count()
     {
-        return CurrentFrame;
+        
+      return CurrentFrame;
     }
     public LogicGameManager get_logic_mgr()
     {

@@ -110,10 +110,22 @@ public class LogicGameManager
         }
         else
         {
-            //Console.WriteLine(" on_receive_player_input " + id + " Player is not exsit " );
+            Console.WriteLine(" on_receive_player_input " + id + " Player is not exsit " );
         }
     }
+    public void on_player_position(int id,Vector2 delta)
+    {
+        Player p = get_player(id);
+        if (p != null)
+        {
+            p.set_position(new Vector3(delta.x, 0, delta.y));
+        }
+        else
+        {
+            Console.WriteLine(" on_player_position " + id + " Player is not exsit ");
 
+        }
+    }
     public void on_player_enter_area(int id, int health, Vector2 rot, Vector3 dir, Vector3 pos)
     {
         Player p = get_player(id);
@@ -182,6 +194,11 @@ public class LogicGameManager
         {
            // Console.WriteLine("msg.player_id " + msg.player_id + " LEAVE_AREA_msg " + mgr_id);
             on_player_leave_area( msg.player_id);
+        }
+        else if(msg.msg_type == (int)RequestType.POSITION)
+        {
+            PositionMessage p_msg = msg as PositionMessage;
+            on_player_position(msg.player_id, p_msg.delta);
         }
     }
     public void excute_frame(SyncFrame syncFrame)
