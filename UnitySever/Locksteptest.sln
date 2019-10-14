@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locksteptest.CSharp", "Locksteptest.CSharp.csproj", "{097EBCF8-1047-F133-5F42-0929702C62BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locksteptest.CSharp.Plugins", "Locksteptest.CSharp.Plugins.csproj", "{0C66407F-28FC-83D5-5BF5-C823E290B1F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{097EBCF8-1047-F133-5F42-0929702C62BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097EBCF8-1047-F133-5F42-0929702C62BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097EBCF8-1047-F133-5F42-0929702C62BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097EBCF8-1047-F133-5F42-0929702C62BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C66407F-28FC-83D5-5BF5-C823E290B1F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C66407F-28FC-83D5-5BF5-C823E290B1F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C66407F-28FC-83D5-5BF5-C823E290B1F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C66407F-28FC-83D5-5BF5-C823E290B1F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

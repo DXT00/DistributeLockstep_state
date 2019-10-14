@@ -1,0 +1,22 @@
+F:\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.csprojAssemblyReference.cache
+F:\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.csproj.CoreCompileInputs.cache
+F:\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\MyClient.exe.config
+F:\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\MyClient.exe
+F:\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\MyClient.pdb
+F:\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\protobuf-net.dll
+F:\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\UnityEngine.dll
+F:\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\protobuf-net.xml
+F:\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.csproj.CopyComplete
+F:\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.exe
+F:\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.pdb
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\MyClient.exe.config
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\MyClient.exe
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\MyClient.pdb
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\protobuf-net.dll
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\UnityEngine.dll
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\bin\x64\Debug\protobuf-net.xml
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.csprojAssemblyReference.cache
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.csproj.CoreCompileInputs.cache
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.csproj.CopyComplete
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.exe
+F:\tencent pro\DistributLocksetp\CSharpClient\MyClient\obj\x64\Debug\MyClient.pdb
